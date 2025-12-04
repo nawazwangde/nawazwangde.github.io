@@ -2,379 +2,865 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nawaz Aslam Wangde | Mechanical & MEP Engineer</title>
+  <title>Nawaz Aslam Wangde | MEP Engineer & Software Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Nawaz Aslam Wangde, Mechanical Engineer specializing in Plumbing, Fire Protection and MEP Building Services." />
+  <meta name="description" content="Portfolio of Nawaz Aslam Wangde - Mechanical Engineer specializing in Plumbing, Fire Protection and MEP Building Services, with expertise in BIM and software development." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header class="site-header" id="home">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="brand-mark">NW</div>
-        <div class="brand-text">
-          <span class="brand-name">Nawaz Aslam Wangde</span>
-          <span class="brand-role">Mechanical / MEP Engineer</span>
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <div class="logo-icon">NW</div>
+        <div class="logo-text">
+          <span class="logo-name">Nawaz Wangde</span>
+          <span class="logo-subtitle">MEP Engineer</span>
         </div>
       </div>
 
-      <button class="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#star-laundry">Star Laundry</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#starlaundry" class="nav-link">Star Laundry</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-main">
-          <div class="hero-pill">
-            <span class="hero-dot"></span>
-            Open to new opportunities
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="gradient-text">MEP Engineer</span><br>
+          & Software Developer
+        </h1>
+
+        <p class="hero-description">
+          Designing reliable plumbing, fire protection, and building services systems for complex projects.
+          Building automation tools and software solutions that streamline engineering workflows.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Years Experience</div>
           </div>
-          <h1 id="hero-title">Mechanical & MEP Engineer specializing in Plumbing and Fire Protection Design</h1>
-          <p class="hero-subtitle">
-            I design reliable plumbing, fire protection, and building services systems for complex healthcare,
-            military, residential, and commercial projects — with strong BIM workflows and automation.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Contact Me</a>
-            <a href="#projects" class="btn btn-outline">View Projects</a>
-            <!-- Optional: link to CV PDF when you add it to /assets -->
-            <!-- <a href="assets/Nawaz_Wangde_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download CV</a> -->
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Delivered</div>
           </div>
-
-          <div class="hero-tags">
-            <span class="tag">Plumbing & Fire Protection</span>
-            <span class="tag">Hospitals & Military Projects</span>
-            <span class="tag">Revit / BIM</span>
-            <span class="tag">MEP Design</span>
+          <div class="stat-item">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Countries</div>
           </div>
         </div>
 
-        <aside class="hero-side">
-          <div class="hero-photo-wrapper">
-            <!-- Replace this image path with your actual photo file -->
-            <img src="assets/profile.jpg" alt="Portrait of Nawaz Aslam Wangde" class="hero-photo" />
-          </div>
-          <div class="hero-meta">
-            <div class="meta-row">
-              <span class="meta-label">Location</span>
-              <span class="meta-value">Kuwait</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Experience</span>
-              <span class="meta-value">7+ years</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Focus</span>
-              <span class="meta-value">Plumbing, Fire, BIM</span>
-            </div>
-          </div>
-        </aside>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            Get in Touch
+          </a>
+          <a href="assets/Resume.pdf" class="btn btn-secondary" download>
+            <i class="fas fa-download"></i>
+            Download CV
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <i class="fas fa-briefcase"></i>
+            View Work
+          </a>
+        </div>
       </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container section-inner">
-        <div class="section-header">
-          <h2>About</h2>
-          <p>A short introduction to who I am and what I do.</p>
-        </div>
-        <div class="section-content two-cols">
-          <div>
-            <p>
-              I am a multi-disciplinary Mechanical Engineer with over seven years of experience in building services
-              design, specializing in <strong>plumbing</strong>, <strong>firefighting</strong>, and
-              <strong>HVAC</strong> systems.
-            </p>
-            <p>
-              I have worked on high-profile healthcare, military, residential, commercial, and industrial projects in
-              Kuwait, India, and Saudi Arabia, delivering functional, safe, and code-compliant systems.
-            </p>
-          </div>
-          <div>
-            <p>
-              My work combines strong engineering fundamentals with modern BIM tools such as Revit, Navisworks, BIM 360
-              and Dynamo. I enjoy building standards, automations, and reusable tools that make design work faster,
-              more reliable, and easier to coordinate across disciplines.
-            </p>
-            <p>
-              Beyond design, I lead coordination with architects and structural engineers, support site teams, and guide
-              junior engineers and technicians in adopting best practices.
-            </p>
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="card-glow"></div>
+          <img src="assets/profile.jpg" alt="Nawaz Aslam Wangde" class="profile-img" />
+          <div class="profile-info">
+            <h3>Nawaz Aslam Wangde</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kuwait</p>
+            <div class="profile-tags">
+              <span><i class="fas fa-fire"></i> Fire Protection</span>
+              <span><i class="fas fa-water"></i> Plumbing Design</span>
+              <span><i class="fas fa-cube"></i> BIM Expert</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section section-alt">
-      <div class="container section-inner">
-        <div class="section-header">
-          <h2>Experience</h2>
-          <p>Roles and responsibilities over my career so far.</p>
-        </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
 
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-header">
-              <h3>Plumbing & Fire Fighting Engineer</h3>
-              <span class="timeline-period">Nov 2022 – Present · Kuwait</span>
-            </div>
-            <div class="timeline-meta">Al Habshi Engineering Consultants Office</div>
-            <ul class="timeline-body">
-              <li>Lead design of plumbing & firefighting systems for healthcare, military, refinery and commercial projects in Kuwait.</li>
-              <li>Design domestic water, hot water, RO, DI, sanitary and storm drainage, and special waste systems (radioactive, biohazard, acid waste).</li>
-              <li>Engineer firefighting systems including wet sprinklers, standpipes, and clean-agent suppression in line with NFPA and local codes.</li>
-              <li>Develop department Revit standards and automated plumbing calculation workflows for faster, error-free design.</li>
-              <li>Coordinate designs with architects and structural engineers to ensure constructible and clash-free solutions.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-header">
-              <h3>Mechanical Engineer</h3>
-              <span class="timeline-period">May 2019 – Jul 2022 · Mumbai, India</span>
-            </div>
-            <div class="timeline-meta">BuroHappold Engineering</div>
-            <ul class="timeline-body">
-              <li>Delivered HVAC, plumbing, and fire protection design for high-rise residential and mixed-use developments.</li>
-              <li>Performed HVAC load calculations, ventilation design, pump sizing, water demand estimation, and pressure profiling.</li>
-              <li>Produced design reports, BOQs, material take-offs, and coordinated Revit/CAD models for multi-disciplinary teams.</li>
-              <li>Reviewed shop drawings and technical submittals, and supported site inspections during construction.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-header">
-              <h3>BIM Engineer</h3>
-              <span class="timeline-period">Nov 2016 – May 2019 · Mumbai, India</span>
-            </div>
-            <div class="timeline-meta">Tata Housing Development Company</div>
-            <ul class="timeline-body">
-              <li>Developed detailed MEP and structural Revit models including custom parametric families.</li>
-              <li>Built BIM standards, content libraries, and workflows; implemented BIM 360 for collaborative project delivery.</li>
-              <li>Trained teams on Revit and iTWO, and contributed to 5D BIM cost and planning workflows.</li>
-            </ul>
-          </article>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Multi-disciplinary engineer with passion for design and automation</p>
       </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container section-inner">
-        <div class="section-header">
-          <h2>Selected Projects</h2>
-          <p>Key projects across healthcare, military, residential, and mixed-use developments.</p>
-        </div>
-
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Kuwait Children’s Hospital</h3>
-            <p class="card-meta">19-storey hospital · 792 beds · Kuwait</p>
-            <p>
-              Full plumbing and fire protection design, including domestic water, special drainage, and wet sprinkler/standpipe systems for a major pediatric hospital complex with podium and basement levels.
-            </p>
-            <div class="chip-row">
-              <span class="chip">Healthcare</span>
-              <span class="chip">Plumbing & Fire</span>
-              <span class="chip">NFPA / IPC</span>
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <div class="text-block">
+            <div class="icon-box">
+              <i class="fas fa-graduation-cap"></i>
             </div>
-          </article>
-
-          <article class="card">
-            <h3>US Army Complex, Kuwait</h3>
-            <p class="card-meta">Military campus · Kuwait</p>
-            <p>
-              Plumbing and fire protection for shooting ranges, workshops, barracks, HQ buildings, sports facilities, dining and clinic buildings, coordinated with strict performance and safety requirements.
-            </p>
-            <div class="chip-row">
-              <span class="chip">Military</span>
-              <span class="chip">Plumbing & Fire</span>
-              <span class="chip">UFC / NFPA</span>
+            <div>
+              <h3>Professional Background</h3>
+              <p>
+                Accomplished multi-disciplinary mechanical engineer with <strong>seven years of expertise</strong> in building services design.
+                Capable of developing functional, safe, and energy-efficient designs for HVAC, plumbing, and fire protection systems
+                in healthcare, military, residential, and commercial projects.
+              </p>
             </div>
-          </article>
-
-          <article class="card">
-            <h3>Theme Park Development, Saudi Arabia</h3>
-            <p class="card-meta">Theme park & mixed-use · Saudi Arabia</p>
-            <p>
-              Mechanical, plumbing and fire protection design for hotels, retail, F&amp;B, souq village, exhibition spaces, parking and amenities on a large master-planned development.
-            </p>
-            <div class="chip-row">
-              <span class="chip">Mixed-use</span>
-              <span class="chip">MEP Design</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>High-Rise Residential Towers, Mumbai</h3>
-            <p class="card-meta">Multi-tower residential · India</p>
-            <p>
-              End-to-end design and delivery of HVAC, plumbing and fire protection systems for luxury residential towers with podiums and multi-level parking.
-            </p>
-            <div class="chip-row">
-              <span class="chip">Residential</span>
-              <span class="chip">High-rise</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- STAR LAUNDRY FEATURED PROJECT -->
-    <section id="star-laundry" class="section section-highlight">
-      <div class="container section-inner">
-        <div class="section-header">
-          <h2>Software Project: New Star Laundry Management System</h2>
-          <p>A self-taught software project that supports real-world business operations.</p>
-        </div>
-        <div class="section-content two-cols">
-          <div>
-            <p>
-              Outside my core mechanical engineering work, I design and develop a desktop application called
-              <strong>New Star Laundry</strong> — a complete laundry management system built in C# .NET with an
-              MS Access database backend.
-            </p>
-            <p>
-              The application manages customers, wash and press invoices, multiple payment modes, database backups,
-              logging, and automated WhatsApp communication.
-            </p>
           </div>
-          <div>
-            <ul class="key-list">
-              <li>Built using <strong>C# .NET WinForms</strong> and <strong>MS Access</strong>.</li>
-              <li>Implements invoice creation, multiple payment options, and UPI QR integration.</li>
-              <li>Includes robust database backup, restore and logging features.</li>
-              <li>Integrates with WhatsApp Web automation to send invoices and payment confirmations.</li>
-            </ul>
-            <p class="note">
-              This project reflects my interest in software development and my ability to build tools that streamline
-              day-to-day operations for small businesses.
-            </p>
+
+          <div class="text-block">
+            <div class="icon-box">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div>
+              <h3>Technical Excellence</h3>
+              <p>
+                My work combines strong engineering fundamentals with modern BIM tools such as <strong>Revit, Navisworks, BIM 360,
+                and Dynamo</strong>. I develop standards, automations, and reusable tools that make design work faster,
+                more reliable, and easier to coordinate across disciplines.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-block">
+            <div class="icon-box">
+              <i class="fas fa-code"></i>
+            </div>
+            <div>
+              <h3>Software Development</h3>
+              <p>
+                Beyond MEP design, I'm passionate about building software solutions. I developed <strong>Star Laundry</strong>,
+                a complete business management system using C# .NET, demonstrating my ability to bridge engineering and
+                software development to solve real-world problems.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section section-alt">
-      <div class="container section-inner">
-        <div class="section-header">
-          <h2>Skills</h2>
-          <p>Technical strengths, tools and standards I work with.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skills-group">
-            <h3>Design & Engineering</h3>
+        <div class="about-highlights" data-aos="fade-left">
+          <div class="highlight-card">
+            <i class="fas fa-award"></i>
+            <h4>Certifications</h4>
             <ul>
-              <li>Plumbing system design (cold, hot, RO, DI, special waste)</li>
-              <li>Sanitary & storm drainage design</li>
-              <li>Fire sprinkler, hydrant & standpipe systems</li>
-              <li>HVAC load calculations & ventilation systems</li>
-              <li>Pump head, water demand & hydraulic calculations</li>
-              <li>Irrigation, compressed air and fuel system design</li>
+              <li>PG Diploma in HVAC Systems Design (ASHRAE)</li>
+              <li>PG Diploma in Plumbing & Fire Fighting (IPC/NFPA)</li>
+              <li>MEP BIM Technologies Certified Professional</li>
+              <li>Project Management Professional (Tata Housing)</li>
             </ul>
           </div>
 
-          <div class="skills-group">
-            <h3>Software & Tools</h3>
+          <div class="highlight-card">
+            <i class="fas fa-globe"></i>
+            <h4>Global Experience</h4>
             <ul>
-              <li>Revit (advanced), AutoCAD, Navisworks</li>
-              <li>BIM 360, iTWO, Dynamo</li>
-              <li>HAP, MS Office</li>
-              <li>C# .NET WinForms, MS Access (for custom tools)</li>
+              <li><strong>Kuwait</strong> - Healthcare & Military Projects</li>
+              <li><strong>India</strong> - Residential & Commercial</li>
+              <li><strong>Saudi Arabia</strong> - Theme Park Development</li>
             </ul>
           </div>
 
-          <div class="skills-group">
+          <div class="highlight-card">
+            <i class="fas fa-language"></i>
+            <h4>Languages</h4>
+            <p>English, Urdu, Hindi, Marathi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">7+ years delivering excellence across multiple domains</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Nov 2022 – Present</span>
+            <div class="timeline-card">
+              <div class="company-logo">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="timeline-info">
+                <h3>Plumbing & Fire Fighting Engineer</h3>
+                <h4>Al Habshi Engineering Consultants Office · Kuwait</h4>
+                <p class="role-description">
+                  Leading design of plumbing and firefighting systems for healthcare, military, and refinery projects in Kuwait.
+                </p>
+                <ul class="achievements">
+                  <li><i class="fas fa-check-circle"></i> Lead design of plumbing systems (cold/hot water, RO, DI, special drainage including radioactive, biohazard, acid waste)</li>
+                  <li><i class="fas fa-check-circle"></i> Engineer firefighting systems (wet sprinklers, standpipes, clean-agent suppression) per NFPA/UFC/IPC standards</li>
+                  <li><i class="fas fa-check-circle"></i> Developed department Revit standards and automated plumbing calculation workflows</li>
+                  <li><i class="fas fa-check-circle"></i> Led team of Revit and CAD technicians, ensuring adherence to standards</li>
+                </ul>
+                <div class="projects-tags">
+                  <span>Children's Hospital (792 beds)</span>
+                  <span>US Army Complex</span>
+                  <span>KNPC Fire Station</span>
+                  <span>KOC Hospital</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">May 2019 – Jul 2022</span>
+            <div class="timeline-card">
+              <div class="company-logo">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="timeline-info">
+                <h3>Mechanical Engineer</h3>
+                <h4>BuroHappold Engineering · Mumbai, India</h4>
+                <p class="role-description">
+                  Led complete delivery of mechanical and plumbing systems from concept to construction administration.
+                </p>
+                <ul class="achievements">
+                  <li><i class="fas fa-check-circle"></i> Designed HVAC, plumbing, and firefighting systems for high-rise residential and mixed-use projects</li>
+                  <li><i class="fas fa-check-circle"></i> Performed load calculations, ventilation design, pump sizing, water demand estimation</li>
+                  <li><i class="fas fa-check-circle"></i> Produced design reports, BOQs, material take-offs, coordinated multi-disciplinary teams</li>
+                  <li><i class="fas fa-check-circle"></i> Reviewed shop drawings, technical submittals, supported site inspections</li>
+                </ul>
+                <div class="projects-tags">
+                  <span>Piramal Towers, Mumbai</span>
+                  <span>RCRC Theme Park, KSA</span>
+                  <span>Godrej Residential (9 towers)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Nov 2016 – May 2019</span>
+            <div class="timeline-card">
+              <div class="company-logo">
+                <i class="fas fa-cube"></i>
+              </div>
+              <div class="timeline-info">
+                <h3>BIM Engineer</h3>
+                <h4>Tata Housing Development Company · Mumbai, India</h4>
+                <p class="role-description">
+                  Managed Building Information Modelling across various functions, advancing project efficiency.
+                </p>
+                <ul class="achievements">
+                  <li><i class="fas fa-check-circle"></i> Developed detailed MEP and structural Revit models with parametric families</li>
+                  <li><i class="fas fa-check-circle"></i> Led BIM 360 platform implementation for collaboration and project management</li>
+                  <li><i class="fas fa-check-circle"></i> Conducted Revit & iTWO training, developed BIM standards and workflows</li>
+                  <li><i class="fas fa-check-circle"></i> Won Tata Innovista as team member for "5D BIM - Disruption in Construction"</li>
+                </ul>
+                <div class="projects-tags">
+                  <span>Cost Savings: ₹8.2M</span>
+                  <span>5D BIM Implementation</span>
+                  <span>Tata Innovista Winner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Complex engineering projects across healthcare, military, and commercial sectors</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fas fa-hospital-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Healthcare · Kuwait</div>
+            <h3>Kuwait Children's Hospital</h3>
+            <p>
+              19-storey hospital with 792 beds. Complete plumbing and fire protection design including domestic water,
+              special drainage systems, wet sprinkler and standpipe systems for pediatric complex with podium and basement levels.
+            </p>
+            <div class="project-meta">
+              <span><i class="fas fa-layer-group"></i> 19 Floors + 3 Basements</span>
+              <span><i class="fas fa-bed"></i> 792 Beds</span>
+            </div>
+            <div class="project-tags">
+              <span>Plumbing</span>
+              <span>Fire Protection</span>
+              <span>NFPA</span>
+              <span>Special Drainage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fas fa-flag-usa"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Military · Kuwait</div>
+            <h3>US Army Complex</h3>
+            <p>
+              Major military campus including shooting ranges, workshops, barracks, headquarters buildings, sports facilities,
+              dining and medical clinics. Coordinated with strict performance and safety requirements per UFC standards.
+            </p>
+            <div class="project-meta">
+              <span><i class="fas fa-building"></i> 15+ Buildings</span>
+              <span><i class="fas fa-shield-alt"></i> UFC Compliant</span>
+            </div>
+            <div class="project-tags">
+              <span>Military</span>
+              <span>UFC</span>
+              <span>Fire Safety</span>
+              <span>MEP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fas fa-ferris-wheel"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Mixed-Use · Saudi Arabia</div>
+            <h3>RCRC Theme Park Development</h3>
+            <p>
+              11 Sq.km park with hotels, retail, F&B outlets, Souq village, exhibition center, parking and amenities.
+              Complete mechanical, plumbing and fire protection design for large-scale master-planned development.
+            </p>
+            <div class="project-meta">
+              <span><i class="fas fa-map"></i> 11 Sq.km</span>
+              <span><i class="fas fa-hotel"></i> Hotels + Retail</span>
+            </div>
+            <div class="project-tags">
+              <span>Theme Park</span>
+              <span>Master Planning</span>
+              <span>MEP Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fas fa-building"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Residential · India</div>
+            <h3>Luxury High-Rise Projects</h3>
+            <p>
+              Multiple premium residential tower projects in Mumbai including Piramal (2 towers) and Godrej (9 towers)
+              with multi-level podium parking. End-to-end HVAC, plumbing, and fire protection design delivery.
+            </p>
+            <div class="project-meta">
+              <span><i class="fas fa-city"></i> 11 Towers Total</span>
+              <span><i class="fas fa-home"></i> Luxury Residential</span>
+            </div>
+            <div class="project-tags">
+              <span>High-Rise</span>
+              <span>HVAC</span>
+              <span>Plumbing</span>
+              <span>BIM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Star Laundry Section -->
+  <section id="starlaundry" class="section starlaundry-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Software Project</span>
+        <h2 class="section-title">Star Laundry Management System</h2>
+        <p class="section-subtitle">A complete business management solution built from scratch</p>
+      </div>
+
+      <div class="starlaundry-content">
+        <div class="starlaundry-hero" data-aos="fade-right">
+          <div class="app-mockup">
+            <div class="mockup-screen">
+              <i class="fas fa-desktop"></i>
+              <h3>Desktop Application</h3>
+              <p>C# WinForms + MS Access</p>
+            </div>
+          </div>
+          <div class="starlaundry-stats">
+            <div class="stat-box">
+              <div class="stat-icon"><i class="fas fa-code"></i></div>
+              <div class="stat-details">
+                <strong>10,000+</strong>
+                <span>Lines of Code</span>
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon"><i class="fas fa-database"></i></div>
+              <div class="stat-details">
+                <strong>10 Tables</strong>
+                <span>Database Schema</span>
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+              <div class="stat-details">
+                <strong>3-Layer</strong>
+                <span>Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="starlaundry-details" data-aos="fade-left">
+          <div class="detail-block">
+            <h3><i class="fas fa-info-circle"></i> Project Overview</h3>
+            <p>
+              A self-taught software project demonstrating full-stack development capabilities. Star Laundry is a
+              comprehensive desktop application for managing laundry operations with dual invoice systems (Wash & Press),
+              customer management, multi-payment processing, and automated reporting.
+            </p>
+          </div>
+
+          <div class="tech-stack">
+            <h3><i class="fas fa-cogs"></i> Technology Stack</h3>
+            <div class="tech-grid">
+              <div class="tech-item">
+                <i class="fab fa-microsoft"></i>
+                <span>C# .NET Framework 4.8</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-desktop"></i>
+                <span>WinForms UI</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>MS Access Database</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code Integration</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp Automation</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Encryption & Security</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-list">
+            <h3><i class="fas fa-star"></i> Key Features</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Dual invoice system (Wash & Press services)</li>
+              <li><i class="fas fa-check"></i> Customer master with phone integration</li>
+              <li><i class="fas fa-check"></i> Multi-payment processing (Cash, UPI, Credit)</li>
+              <li><i class="fas fa-check"></i> Automated database backup with throttling</li>
+              <li><i class="fas fa-check"></i> WhatsApp invoice sharing</li>
+              <li><i class="fas fa-check"></i> Comprehensive logging system</li>
+              <li><i class="fas fa-check"></i> Financial year management</li>
+              <li><i class="fas fa-check"></i> Report generation with Crystal Reports</li>
+            </ul>
+          </div>
+
+          <div class="architecture-highlight">
+            <h3><i class="fas fa-sitemap"></i> Clean Architecture</h3>
+            <p>
+              Built with separation of concerns following industry best practices:
+              <strong>UI Layer → BLL (Business Logic) → DAL (Data Access) → Models</strong>
+            </p>
+            <p class="architecture-note">
+              Weekend incremental development approach, transforming from monolithic to clean 3-layer architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="starlaundry-achievements" data-aos="fade-up">
+        <div class="achievement-card">
+          <i class="fas fa-rocket"></i>
+          <h4>Performance Optimization</h4>
+          <p>95% improvement in form load times (5-10s → <500ms)</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-sync"></i>
+          <h4>Smart Backup System</h4>
+          <p>Intelligent throttling reduced backup ops by 90%</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-code-branch"></i>
+          <h4>Version Control</h4>
+          <p>Git workflow with feature branches and releases</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Diverse technical proficiency across engineering and software development</p>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+          <div class="category-header">
+            <i class="fas fa-drafting-compass"></i>
+            <h3>MEP Design & Engineering</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Plumbing Systems Design</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Fire Protection Systems</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HVAC Design & Load Calculations</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Hydraulic Calculations</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="category-header">
+            <i class="fas fa-cube"></i>
+            <h3>BIM & CAD Software</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Autodesk Revit</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Dynamo for Revit</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Navisworks & BIM 360</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>AutoCAD</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="category-header">
+            <i class="fas fa-code"></i>
+            <h3>Software Development</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>C# .NET Framework</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>WinForms Development</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Database Design (MS Access)</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git & Version Control</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="category-header">
+            <i class="fas fa-book"></i>
             <h3>Codes & Standards</h3>
-            <ul>
-              <li>NFPA, IPC, UFC</li>
-              <li>ASHRAE, ASPE</li>
-              <li>Local Kuwait authority requirements</li>
-            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container section-inner">
-        <div class="section-header">
-          <h2>Contact</h2>
-          <p>Feel free to get in touch for opportunities, collaborations, or technical discussions.</p>
-        </div>
-        <div class="contact-grid">
-          <div>
-            <h3>Details</h3>
-            <ul class="contact-list">
-              <li><strong>Location:</strong> Kuwait</li>
-              <li><strong>Email:</strong> <a href="mailto:wangdenawaz@gmail.com">wangdenawaz@gmail.com</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Links</h3>
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="mailto:wangdenawaz@gmail.com">Email Me</a>
-              <a class="btn btn-outline" href="https://www.linkedin.com/in/nawazwangde" target="_blank" rel="noopener">
-                LinkedIn
-              </a>
-              <a class="btn btn-ghost" href="https://github.com/nawazwangde" target="_blank" rel="noopener">
-                GitHub
-              </a>
+          <div class="codes-grid">
+            <div class="code-badge">
+              <i class="fas fa-fire"></i>
+              <span>NFPA</span>
             </div>
-            <p class="contact-note">
-              I’m happy to connect regarding building services design, BIM workflows, or custom engineering tools.
-            </p>
+            <div class="code-badge">
+              <i class="fas fa-water"></i>
+              <span>IPC</span>
+            </div>
+            <div class="code-badge">
+              <i class="fas fa-flag-usa"></i>
+              <span>UFC</span>
+            </div>
+            <div class="code-badge">
+              <i class="fas fa-wind"></i>
+              <span>ASHRAE</span>
+            </div>
+            <div class="code-badge">
+              <i class="fas fa-tint"></i>
+              <span>ASPE</span>
+            </div>
+            <div class="code-badge">
+              <i class="fas fa-landmark"></i>
+              <span>Kuwait Codes</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Nawaz Aslam Wangde</span>
-      <span class="footer-note">Mechanical & MEP Engineer · Plumbing, Fire Protection & BIM</span>
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Open to new opportunities and collaborations</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Khaitan, Kuwait</p>
+              <span class="availability">Available for relocation</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:wangdenawaz@gmail.com">wangdenawaz@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:+96567062070">+965 6706 2070</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/nawazwangde" target="_blank" rel="noopener" class="social-btn linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/nawazwangde" target="_blank" rel="noopener" class="social-btn github">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:wangdenawaz@gmail.com" class="social-btn email">
+              <i class="fas fa-envelope"></i>
+              <span>Email Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-cta" data-aos="fade-left">
+          <div class="cta-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Looking for MEP Engineer?</h3>
+            <p>
+              I bring 7+ years of experience in plumbing, fire protection, and building services design with
+              expertise in complex healthcare and military projects.
+            </p>
+            <a href="assets/Resume.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i>
+              Download Resume
+            </a>
+          </div>
+
+          <div class="cta-card">
+            <i class="fas fa-code"></i>
+            <h3>Need Software Solutions?</h3>
+            <p>
+              Self-taught developer with proven ability to build complete applications from scratch.
+              Passionate about automation and efficient workflows.
+            </p>
+            <a href="#starlaundry" class="btn btn-outline">
+              <i class="fas fa-project-diagram"></i>
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">NW</div>
+            <div class="logo-text">
+              <span class="logo-name">Nawaz Wangde</span>
+              <span class="logo-subtitle">MEP Engineer & Developer</span>
+            </div>
+          </div>
+          <p>Designing systems. Building solutions. Creating impact.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+          </div>
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <a href="https://www.linkedin.com/in/nawazwangde" target="_blank">LinkedIn</a>
+            <a href="https://github.com/nawazwangde" target="_blank">GitHub</a>
+            <a href="mailto:wangdenawaz@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Nawaz Aslam Wangde. All rights reserved.</p>
+        <p class="footer-note">Built with passion · Hosted on GitHub Pages</p>
+      </div>
     </div>
   </footer>
 
-  <script>
-    // Set current year
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Mobile nav toggle
-    const navToggle = document.querySelector(".nav-toggle");
-    const nav = document.querySelector(".nav");
-    navToggle.addEventListener("click", () => {
-      nav.classList.toggle("nav-open");
-      navToggle.classList.toggle("nav-toggle-open");
-    });
-
-    // Close nav when clicking a link (mobile)
-    nav.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        nav.classList.remove("nav-open");
-        navToggle.classList.remove("nav-toggle-open");
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
