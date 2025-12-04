@@ -1,156 +1,150 @@
-# Nawaz Aslam Wangde - Portfolio Website
+# Portfolio Website
 
-[![Live Site](https://img.shields.io/badge/Live-nawazwangde.github.io-blue?style=flat-square)](https://nawazwangde.github.io)
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-success?style=flat-square)](https://pages.github.com/)
+Personal portfolio website built with HTML, CSS, and vanilla JavaScript. Hosted on GitHub Pages.
 
-Professional portfolio website showcasing my work as a Mechanical & MEP Engineer specializing in plumbing, fire protection, HVAC, and building services design.
+🔗 **Live Site**: [nawazwangde.github.io](https://nawazwangde.github.io)
 
-## 🎯 About
+## Tech Stack
 
-I'm a multi-disciplinary mechanical engineer with **7+ years of expertise** in building services design across healthcare, military, residential, and commercial projects. This portfolio highlights my professional MEP engineering work and personal software development projects.
+- HTML5
+- CSS3 (Custom Properties, Flexbox, Grid, Animations)
+- Vanilla JavaScript (Intersection Observer API)
+- Font Awesome 6.4.0
+- GitHub Pages (Hosting)
 
-**Key Expertise:**
-- 💧 Plumbing Systems Design
-- 🔥 Fire Protection Systems
-- 💨 HVAC Design & Engineering
-- 🧊 Building Information Modeling (BIM)
-
-## 🚀 Live Site
-
-Visit the live portfolio: **[nawazwangde.github.io](https://nawazwangde.github.io)**
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 nawazwangde.github.io/
-├── index.html          # Main HTML file with all content
-├── style.css           # Styling with CSS custom properties
-├── script.js           # Vanilla JavaScript for interactions
+├── index.html          # Single-page application
+├── style.css           # All styling with CSS variables
+├── script.js           # Navigation, scroll effects, animations
 ├── assets/
-│   ├── profile.jpeg    # Profile photo
-│   └── Resume.pdf      # Downloadable CV
-├── CLAUDE.md           # AI assistant documentation (not in repo)
-└── README.md           # This file
+│   ├── profile.jpeg    # Profile image
+│   └── Resume.pdf      # CV download
+└── README.md
 ```
 
-## 🎨 Features
+## Features
 
-- **Modern Dark Theme** with animated gradient background
-- **Glassmorphism Effects** for cards and profile elements
-- **Responsive Design** optimized for desktop, tablet, and mobile
-- **Smooth Animations** using Intersection Observer API
-- **Professional Sections:**
-  - Hero with profile card
-  - About with Education & Certifications
-  - Work Experience timeline (7+ years)
-  - MEP Engineering Projects (4 major projects)
-  - Passion Projects (Software development)
-  - Technical Skills breakdown
-  - Contact information
+- **Responsive Design** - Mobile-first approach
+- **Dark Theme** - Animated gradient background with floating orbs
+- **Glassmorphism UI** - Backdrop blur effects on cards
+- **Smooth Animations** - Intersection Observer for scroll-triggered animations
+- **No Dependencies** - Pure vanilla JavaScript, no frameworks
+- **Static Site** - No build process required
 
-## 🛠️ Tech Stack
-
-- **HTML5** - Semantic markup
-- **CSS3** - Custom properties, animations, flexbox, grid
-- **Vanilla JavaScript** - No frameworks
-- **Font Awesome 6.4.0** - Icons
-- **GitHub Pages** - Hosting
-
-## 💼 Professional Highlights
-
-### Work Experience
-- **Al Habshi Engineering Consultants** (Kuwait) - Plumbing & Fire Fighting Engineer
-- **BuroHappold Engineers India** (Mumbai) - Mechanical Engineer
-- **Tata Housing Development Company** (Mumbai) - BIM Engineer
-
-### Featured Projects
-- Kuwait Children's Hospital (792 beds, 19 floors)
-- US Army Complex (Military campus)
-- RCRC Theme Park (11 sq.km development, Saudi Arabia)
-- Luxury High-Rise Residential Projects (Mumbai)
-
-### Certifications
-- PG Diploma - HVAC Systems Design (ASHRAE)
-- PG Diploma - Plumbing & Fire Fighting (IPC/NFPA)
-- Certified Professional - MEP BIM Technologies
-- Certified Professional - AutoCAD & Revit
-- Project Management Professional Course
-
-## 🔧 Local Development
-
-This is a static website with no build process required.
+## Local Development
 
 ### Quick Start
 
-1. Clone the repository:
+Clone and open in browser:
+
 ```bash
 git clone https://github.com/nawazwangde/nawazwangde.github.io.git
 cd nawazwangde.github.io
 ```
 
-2. Open in browser:
+#### Windows
 ```bash
-# Windows
 start index.html
+```
 
-# macOS
+#### macOS
+```bash
 open index.html
+```
 
-# Linux
+#### Linux
+```bash
 xdg-open index.html
 ```
 
-### Optional: Run Local Server
+### Using Local Server (Optional)
 
-For a more accurate preview:
+For better development experience:
 
+**Python:**
 ```bash
-# Python 3
 python -m http.server 8000
-
-# Or use VS Code Live Server extension
 ```
 
-Then visit `http://localhost:8000`
+**Node.js:**
+```bash
+npx http-server -p 8000
+```
 
-## 📝 Making Changes
+**VS Code:**
+- Install "Live Server" extension
+- Right-click `index.html` → "Open with Live Server"
 
-1. **Content Updates**: Edit `index.html` directly
-2. **Styling**: Modify `style.css` (uses CSS custom properties)
-3. **Behavior**: Update `script.js` for JavaScript functionality
-4. **Assets**: Add files to `assets/` directory
+Then visit: `http://localhost:8000`
 
-## 🚀 Deployment
+## Architecture
 
-The site automatically deploys via GitHub Pages:
+### Single-Page Static Site
+- No build tools or transpilation
+- Direct HTML/CSS/JS served to browser
+- All content in one HTML file for simplicity
 
-1. Push changes to `main` branch
-2. GitHub Pages rebuilds the site (5-10 minutes)
-3. Hard refresh browser to see updates (`Ctrl+Shift+R`)
+### CSS Organization
+- CSS custom properties for theming
+- Mobile-first responsive breakpoints
+- Modular class naming
 
-## 📱 Responsive Breakpoints
+### JavaScript Features
+- Sticky navigation with scroll detection
+- Mobile hamburger menu toggle
+- Intersection Observer for fade-in animations
+- Skill bar animations on scroll
 
-- **Desktop**: Full layouts with horizontal navigation
-- **Tablet** (≤900px): Simplified grids, adjusted spacing
-- **Mobile** (≤720px): Hamburger menu, vertical stacking
-- **Small Mobile** (≤480px): Optimized padding and sizing
+## Deployment
 
-## 📧 Contact
+Automatically deploys via GitHub Pages:
 
-- **Email**: [wangdenawaz@gmail.com](mailto:wangdenawaz@gmail.com)
-- **LinkedIn**: [linkedin.com/in/nawazwangde](https://linkedin.com/in/nawazwangde)
-- **GitHub**: [github.com/nawazwangde](https://github.com/nawazwangde)
-- **Location**: Khaitan, Kuwait
+1. Push to `main` branch
+2. GitHub Actions builds and deploys
+3. Wait 5-10 minutes for deployment
+4. Hard refresh browser (`Ctrl+Shift+R`) to clear cache
 
-## 📄 License
+**Deployment URL**: `https://nawazwangde.github.io`
 
-This portfolio website is personal and proprietary. The code is open for viewing and learning purposes.
+## Responsive Breakpoints
 
-## 🙏 Acknowledgments
+| Breakpoint | Width | Layout |
+|------------|-------|--------|
+| Desktop | >900px | Full grid, horizontal nav |
+| Tablet | ≤900px | Simplified grids |
+| Mobile | ≤720px | Hamburger menu, stacked |
+| Small Mobile | ≤480px | Optimized spacing |
 
-Built with the assistance of Claude (Anthropic AI) for design, development, and content structuring.
+## Making Changes
+
+1. Edit `index.html` for content
+2. Modify `style.css` for styling
+3. Update `script.js` for behavior
+4. Test locally before pushing
+5. Commit and push to deploy
+
+## Performance
+
+- No external dependencies (except Font Awesome CDN)
+- Optimized images
+- CSS animations with GPU acceleration
+- Minimal JavaScript for fast load times
+
+## Browser Support
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## License
+
+Personal portfolio - code available for reference and learning.
 
 ---
 
-**Last Updated**: December 2024
-**Status**: ✅ Live and Active
+**Last Updated**: December 2025
+**Built with**: Claude AI assistance

@@ -408,6 +408,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   DEVELOPMENT NOTICE
+   ============================================ */
+
+.dev-notice {
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+  border-bottom: 2px solid rgba(234, 179, 8, 0.3);
+  padding: 12px 0;
+  position: sticky;
+  top: 70px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+.dev-notice .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #fbbf24;
+}
+
+.dev-notice i {
+  font-size: 1.1rem;
+}
+
+.dev-notice span {
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .dev-notice {
+    top: 60px;
+    padding: 10px 0;
+  }
+
+  .dev-notice .container {
+    font-size: 0.8rem;
+    gap: 8px;
+  }
+}
+
+/* ============================================
    HERO SECTION
    ============================================ */
 
