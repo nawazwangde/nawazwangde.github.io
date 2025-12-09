@@ -1358,6 +1358,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
 }
 
+.category-description {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
 .skill-item {
   margin-bottom: 24px;
 }
@@ -1848,3 +1853,18 @@ h1, h2, h3, h4, h5, h6 {
 [data-aos-delay="100"] { transition-delay: 0.1s; }
 [data-aos-delay="200"] { transition-delay: 0.2s; }
 [data-aos-delay="300"] { transition-delay: 0.3s; }
+
+/* ============================================
+   PROJECT MEDIA STYLES
+   ============================================ */
+
+.project-image img,
+.project-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the media cover the area without distortion */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensures it stays behind any overlay text if you add it later */
+}
